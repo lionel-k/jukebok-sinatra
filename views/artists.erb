@@ -1,0 +1,7 @@
+<h2>Artist: <%= @hash_results[:artist_name]%></h2>
+<h3>All Albums</h3>
+<ol>
+  <% @hash_results[:albums].each do |result| %>
+    <li><a href="albums/<%=result[:album_id]%>"><%= result[:album_title]%></a>** <%=result[:genre_name]%></li>
+  <% end %>
+</ol>

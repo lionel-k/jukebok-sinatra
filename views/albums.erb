@@ -1,0 +1,7 @@
+<h2>Album: <%= @album_name %></h2>
+<h3>All tracks</h3>
+<ol>
+  <% @results.each do |result| %>
+    <li><a href="tracks/<%=result[0]%>"><%= result[1] %></a></li>
+  <% end %>
+</ol>
